@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos Sociais - Instituto Esperança</title>
+	
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Projetos Sociais</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="cadastro.html">Participe</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Nossas iniciativas</h2>
+
+           <article class="card-projeto">
+
+    <span class="badge">Projeto ativo</span>
+
+    <h3>Alimentação solidária</h3>
+
+    <p>
+        Projeto destinado à arrecadação e distribuição de alimentos
+        para famílias em situação de vulnerabilidade.
+    </p>
+
+    <button type="button" onclick="abrirModal()">
+        Saiba mais
+    </button>
+
+</article>
+
+<article class="card-projeto">
+
+<span class="badge">Projeto ativo</span>
+    <h3>Educação para todos</h3>
+    <p>
+        A iniciativa oferece atividades educativas e apoio escolar
+        para crianças e jovens da comunidade.
+    </p>
+</article>
+        </section>
+
+        <section>
+            <h2>Doações</h2>
+            <p>
+                As doações ajudam a manter os projetos sociais e ampliar o
+                atendimento às pessoas beneficiadas pela organização.
+            </p>
+        </section>
+
+        <section>
+            <h2>Voluntariado</h2>
+            <p>
+                Pessoas interessadas podem participar das ações da ONG
+                realizando seu cadastro na página de participação.
+            </p>
+
+            <a href="cadastro.html">Quero ser voluntário</a>
+        </section>
+		<div id="toast" class="toast">
+    Projeto selecionado com sucesso!
+</div>
+
+<div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-conteudo">
+        <button class="modal-fechar" onclick="fecharModal()" aria-label="Fechar">&times;</button>
+        <h3>Alimentação solidária</h3>
+        <p>
+            O projeto arrecada e distribui cestas básicas mensalmente
+            para famílias em situação de vulnerabilidade, contando com
+            o apoio de doadores e voluntários da comunidade.
+        </p>
+    </div>
+</div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Instituto Esperança. Todos os direitos reservados.</p>
+    </footer>
+	
+<script src="scripts.js"></script>
+
+</body>
+</html>
