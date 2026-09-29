@@ -321,3 +321,17 @@ button:disabled {
     font-size: 13px;
     display: block;
 }
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: var(--cor-primaria);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 0 0 8px 0;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    left: 0;
+}

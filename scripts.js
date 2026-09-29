@@ -21,3 +21,8 @@ function mostrarToast() {
         toast.classList.remove("mostrar");
     }, 3000);
 }
+document.addEventListener("keydown", function (evento) {
+    if (evento.key === "Escape") {
+        fecharModal();
+    }
+});
