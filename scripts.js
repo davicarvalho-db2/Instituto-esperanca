@@ -1,8 +1,15 @@
+let ultimoElementoFocado = null;
+
 function abrirModal() {
     const modal = document.getElementById("modal");
 
+    ultimoElementoFocado = document.activeElement;
+
     modal.classList.add("aberto");
     modal.setAttribute("aria-hidden", "false");
+
+    const botaoFechar = modal.querySelector(".modal-fechar");
+    botaoFechar.focus();
 }
 
 function fecharModal() {
@@ -10,6 +17,10 @@ function fecharModal() {
 
     modal.classList.remove("aberto");
     modal.setAttribute("aria-hidden", "true");
+
+    if (ultimoElementoFocado) {
+        ultimoElementoFocado.focus();
+    }
 }
 
 function mostrarToast() {
