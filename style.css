@@ -72,6 +72,11 @@ nav a:hover {
     color: var(--cor-primaria);
 }
 
+nav a:focus {
+    outline: 3px solid var(--cor-primaria);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
 /* =========================
    CONTEÚDO PRINCIPAL
    ========================= */
@@ -334,4 +339,10 @@ button:disabled {
 
 .skip-link:focus {
     left: 0;
+}
+input:focus,
+select:focus {
+    outline: 3px solid var(--cor-primaria);
+    outline-offset: 2px;
+    border-color: var(--cor-primaria);
 }
