@@ -346,3 +346,30 @@ select:focus {
     outline-offset: 2px;
     border-color: var(--cor-primaria);
 }
+[data-theme="dark"] {
+    --cor-fundo: #111827;
+    --cor-branco: #1F2937;
+    --cor-texto: #F9FAFB;
+    --cor-texto-claro: #9CA3AF;
+}
+
+[data-theme="dark"] .alerta {
+    background-color: #1E3A5F;
+    color: #BFDBFE;
+    border-color: #3B82F6;
+}
+
+[data-theme="dark"] .mensagem-erro {
+    color: #F87171;
+}
+
+.toggle-tema {
+    background-color: transparent;
+    border: 2px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+}
+
+.toggle-tema:hover {
+    background-color: var(--cor-primaria);
+    color: white;
+}
